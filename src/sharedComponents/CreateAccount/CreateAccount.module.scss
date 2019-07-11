@@ -1,0 +1,36 @@
+@import "../../assets/global/styles/font.scss";
+.form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-weight: $font-weight-medium;
+    color: #334144;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .row_inputs_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .error_text {
+    color: red;
+    margin: 5px 0;
+  }
+}
+.success_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .success_text {
+    color: black;
+    text-align: center;
+  }
+}

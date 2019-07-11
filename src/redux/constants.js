@@ -1,2 +1,7 @@
 export const LOADING_FLOWERS = "LOADING_FLOWERS";
 export const SUCCESS_FLOWERS = "SUCCESS_FLOWERS";
+export const OPEN_MODAL = "OPEN_MODAL";
+export const CLOSE_MODAL = "CLOSE_MODAL";
+export const LOADING_USER = "LOADING_USER";
+export const SUCCESS_USER = "SUCCESS_USER";
+export const ERROR_USER = "ERROR_USER";

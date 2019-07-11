@@ -1,0 +1,16 @@
+.button {
+  width: 380px;
+  height: 50px;
+  border-radius: 3px;
+  box-shadow: 0 15px 20px 0 rgba(234, 168, 159, 0.2);
+  background-image: linear-gradient(to left, #ecbcb3, #eaa79e);
+  font-size: 14px;
+  color: inherit;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}

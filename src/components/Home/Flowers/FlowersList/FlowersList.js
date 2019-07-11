@@ -3,7 +3,7 @@ import FlowersCard from "./FlowersCard";
 import styles from "./FlowersList.module.scss";
 const FlowersList = ({ flowers }) => {
   const flowersRender = () =>
-    flowers.map(flower => <FlowersCard flower={flower} />);
+    flowers.map(flower => <FlowersCard key={flower.id} flower={flower} />);
   return <div className={styles.container}>{flowersRender()}</div>;
 };
 

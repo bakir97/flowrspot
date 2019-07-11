@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import FlowersList from "./FlowersList";
-import styles from "./Flowers.module.scss";
+// import styles from "./Flowers.module.scss";
 import Loader from "../../../sharedComponents/Loader";
 export default class Flowers extends Component {
   componentDidMount() {
