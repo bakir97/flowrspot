@@ -5,6 +5,10 @@
   font-size: $font-size-medium;
   font-family: $font-family;
 }
+@mixin font-light {
+  font-weight: $font-weight-light;
+  margin: 0;
+}
 @mixin rounded-orange-button {
   color: $white;
   width: 140px;
@@ -23,5 +27,29 @@
   }
   &:hover {
     cursor: pointer;
+  }
+}
+@mixin input-style {
+  color: $light-gray;
+  font-family: $font-family;
+  font-size: $font-input-size;
+  font-weight: $font-input-weight;
+}
+@mixin placeholder-styles {
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    @include input-style;
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    @include input-style;
+  }
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    @include input-style;
+  }
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    @include input-style;
   }
 }
