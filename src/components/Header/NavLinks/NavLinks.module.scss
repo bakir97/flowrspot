@@ -1,0 +1,13 @@
+@import "../../../assets/global/styles/colors.scss";
+@import "../../../assets/global/styles/font.scss";
+@import "../../../assets/global/styles/mixins.scss";
+.links {
+  margin-left: auto;
+  .link {
+    color: $light-gray;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 61px;
+    @include font-medium;
+  }
+}

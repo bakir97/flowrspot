@@ -1,0 +1,16 @@
+@import "../../../assets/global/styles/colors.scss";
+@import "../../../assets/global/styles/mixins.scss";
+.login {
+  @include font-medium;
+  color: $light-orange;
+  margin-right: 30px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}

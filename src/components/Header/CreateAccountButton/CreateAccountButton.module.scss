@@ -1,0 +1,5 @@
+@import "../../../assets/global/styles/mixins.scss";
+
+.button {
+  @include rounded-orange-button;
+}

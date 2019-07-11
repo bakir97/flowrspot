@@ -1,0 +1,27 @@
+@import "./font.scss";
+@import "./colors.scss";
+@mixin font-medium {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-medium;
+  font-family: $font-family;
+}
+@mixin rounded-orange-button {
+  color: $white;
+  width: 140px;
+  height: 40px;
+  border-radius: 50px;
+  box-shadow: 0 15px 20px 0 $gray-shadow;
+  background-image: linear-gradient(
+    to left,
+    $light-orange-button,
+    $darker-orange-button
+  );
+  border: none;
+  @include font-medium;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
