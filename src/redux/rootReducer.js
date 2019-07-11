@@ -1,2 +1,5 @@
 import { combineReducers } from "redux";
-export default combineReducers({});
+import flowersReducer from "./flowers/reducer";
+export default combineReducers({
+  flowersReducer
+});

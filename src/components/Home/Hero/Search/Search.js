@@ -10,7 +10,7 @@ export default class Search extends Component {
   };
   submitSearch = e => {
     e.preventDefault();
-    this.props.handleSearch(this.state.searchTerm);
+    this.props.searchFlowers(this.state.searchTerm);
   };
   render() {
     return (

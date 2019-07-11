@@ -7,13 +7,13 @@ import CreateAccountButton from "./CreateAccountButton";
 //
 import styles from "./Header.module.scss";
 
-const Header = () => {
+const Header = ({ openModal }) => {
   return (
     <div className={styles.container}>
       <Logo />
       <NavLinks />
-      <LoginButton />
-      <CreateAccountButton />
+      <LoginButton openModal={openModal} />
+      <CreateAccountButton openModal={openModal} />
     </div>
   );
 };
