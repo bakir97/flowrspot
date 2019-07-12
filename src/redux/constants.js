@@ -5,3 +5,5 @@ export const CLOSE_MODAL = "CLOSE_MODAL";
 export const LOADING_USER = "LOADING_USER";
 export const SUCCESS_USER = "SUCCESS_USER";
 export const ERROR_USER = "ERROR_USER";
+export const SET_USER = "SET_USER";
+export const ADD_FAV = "ADD_FAV";

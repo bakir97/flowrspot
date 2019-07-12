@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  padding-left: 111px;
+  flex-direction: column;
+  // align-items: center;
+  .row {
+    display: flex;
+
+    align-items: center;
+    margin-bottom: 41px;
+  }
+  .title_container {
+    margin-left: 30px;
+    .title {
+      margin: 0;
+      margin-bottom: 6px;
+      color: #334144;
+      font-size: 25px;
+      font-weight: 300;
+    }
+    .sub_title {
+      margin: 0;
+      font-size: 13px;
+      color: #949ea0;
+    }
+  }
+  .information_title {
+    font-size: 10px;
+    color: #949ea0;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .information_value {
+    color: #334144;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 31px;
+  }
+}

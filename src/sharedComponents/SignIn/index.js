@@ -1,28 +1,33 @@
-import CreateAccount from "./CreateAccount";
+import SignIn from "./SignIn";
 import { connect } from "react-redux";
-import { registerUser } from "../../redux/user/action";
+import { registerUser, loginUser, logout } from "../../redux/user/action";
 import {
   isUserLoading,
   isUserSuccess,
-  getErrors
+  getErrors,
+  getUser
 } from "../../redux/user/selectors";
 import { getModalType } from "../../redux/modal/selectors";
-import { openModal } from "../../redux/modal/actions";
+import { openModal, closeModal } from "../../redux/modal/actions";
 import { errorUser } from "../../redux/user/action";
 const mapStateToProps = state => ({
   loading: isUserLoading(state),
-  user: isUserSuccess(state),
+  isUserSuccess: isUserSuccess(state),
   modalType: getModalType(state),
-  errors: getErrors(state)
+  errors: getErrors(state),
+  user: getUser(state)
 });
 
 const mapDispatchToProps = {
   registerUser,
   openModal,
-  errorUser
+  errorUser,
+  loginUser,
+  closeModal,
+  logout
 };
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CreateAccount);
+)(SignIn);

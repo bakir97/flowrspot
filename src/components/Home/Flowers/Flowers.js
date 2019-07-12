@@ -4,10 +4,26 @@ import FlowersList from "./FlowersList";
 import Loader from "../../../sharedComponents/Loader";
 export default class Flowers extends Component {
   componentDidMount() {
-    this.props.getFlowers();
+    const user = localStorage.getItem("user");
+    this.props.getFlowers(user && JSON.parse(user).auth_token);
   }
   render() {
-    const { flowers, isLoading } = this.props;
-    return isLoading ? <Loader /> : <FlowersList flowers={flowers} />;
+    const {
+      flowers,
+      isLoading,
+      user,
+      addFavFlower,
+      removeFavFlower
+    } = this.props;
+    return isLoading ? (
+      <Loader />
+    ) : (
+      <FlowersList
+        flowers={flowers}
+        user={user}
+        addFavFlower={addFavFlower}
+        removeFavFlower={removeFavFlower}
+      />
+    );
   }
 }

@@ -13,8 +13,13 @@
 .modal {
   border-radius: 3px;
   padding: 30px;
-  z-index: 1200;
-  width: 440px;
+  width: 380px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+.modal_profile {
+  border-radius: 3px;
+  width: 600px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
   background-color: white;
 }
@@ -22,6 +27,16 @@
   margin-top: 20px;
   color: white;
   opacity: 0.5;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.close {
+  margin: 0;
+  margin-right: 15px;
+  margin-top: 15px;
+  color: black;
+  text-align: end;
   &:hover {
     cursor: pointer;
   }

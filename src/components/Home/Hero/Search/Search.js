@@ -9,8 +9,12 @@ export default class Search extends Component {
     this.setState({ searchTerm: e.target.value });
   };
   submitSearch = e => {
+    const user = localStorage.getItem("user");
     e.preventDefault();
-    this.props.searchFlowers(this.state.searchTerm);
+    this.props.searchFlowers(
+      this.state.searchTerm,
+      user && JSON.parse(user).auth_token
+    );
   };
   render() {
     return (

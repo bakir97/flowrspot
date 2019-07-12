@@ -1,0 +1,14 @@
+@import "../../../assets/global/styles/colors.scss";
+@import "../../../assets/global/styles/font.scss";
+@import "../../../assets/global/styles/mixins.scss";
+.container {
+  display: flex;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.text {
+  @include font-medium;
+  color: $light-gray;
+  margin-right: 20px;
+}

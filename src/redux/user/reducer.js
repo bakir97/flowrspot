@@ -1,8 +1,9 @@
-import { SUCCESS_USER, LOADING_USER, ERROR_USER } from "../constants";
+import { SUCCESS_USER, LOADING_USER, ERROR_USER, SET_USER } from "../constants";
 const initialState = {
   userSuccess: false,
   loading: false,
-  errors: []
+  errors: [],
+  user: null
 };
 
 export default (state = initialState, { type, payload }) => {
@@ -13,6 +14,8 @@ export default (state = initialState, { type, payload }) => {
       return { ...state, loading: payload };
     case ERROR_USER:
       return { ...state, errors: payload };
+    case SET_USER:
+      return { ...state, user: payload };
 
     default:
       return state;
