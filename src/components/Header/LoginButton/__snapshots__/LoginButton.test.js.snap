@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginButton should render correctly 1`] = `
+<button
+  className="login"
+  onClick={[Function]}
+>
+  Login
+</button>
+`;

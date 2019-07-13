@@ -1,5 +1,5 @@
 import { OPEN_MODAL, CLOSE_MODAL } from "../constants";
-import { successUser } from "../user/action";
+import { successUser } from "../user/actions";
 export const openModal = type => dispatch => {
   dispatch(openModalAction(type));
   dispatch(successUser(false));

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`user reducer should handle ERROR_USER 1`] = `
+Object {
+  "errors": Array [
+    "test error",
+  ],
+  "loading": false,
+  "user": null,
+  "userSuccess": false,
+}
+`;
+
+exports[`user reducer should handle LOADING_USER 1`] = `
+Object {
+  "errors": Array [],
+  "loading": true,
+  "user": null,
+  "userSuccess": false,
+}
+`;
+
+exports[`user reducer should handle SET_USER 1`] = `
+Object {
+  "errors": Array [],
+  "loading": false,
+  "user": Object {
+    "id": 1,
+  },
+  "userSuccess": false,
+}
+`;
+
+exports[`user reducer should handle SUCCESS_USER 1`] = `
+Object {
+  "errors": Array [],
+  "loading": false,
+  "user": null,
+  "userSuccess": true,
+}
+`;
+
+exports[`user reducer should return the initial state 1`] = `
+Object {
+  "errors": Array [],
+  "loading": false,
+  "user": null,
+  "userSuccess": false,
+}
+`;

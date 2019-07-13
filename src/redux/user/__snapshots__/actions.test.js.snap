@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action creators user should set error user action with payload array of error strings 1`] = `
+Array [
+  Object {
+    "payload": Array [
+      "test error",
+    ],
+    "type": "ERROR_USER",
+  },
+]
+`;
+
+exports[`action creators user should set loading user with payload true 1`] = `
+Array [
+  Object {
+    "payload": true,
+    "type": "LOADING_USER",
+  },
+]
+`;
+
+exports[`action creators user should set set user action with payload object  1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "id": 1,
+    },
+    "type": "SET_USER",
+  },
+]
+`;
+
+exports[`action creators user should set success user with payload true 1`] = `
+Array [
+  Object {
+    "payload": true,
+    "type": "SUCCESS_USER",
+  },
+]
+`;

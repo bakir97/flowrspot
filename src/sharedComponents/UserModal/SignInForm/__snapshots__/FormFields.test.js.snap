@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormFields should render correctly 1`] = `
+<Fragment>
+  <div
+    className="row_inputs_container"
+  >
+    <Input
+      name="first_name"
+      title="First Name"
+      type="text"
+    />
+    <Input
+      name="last_name"
+      title="Last Name"
+      type="text"
+    />
+  </div>
+  <Input
+    full={true}
+    name="date_of_birth"
+    title="Date of Birth"
+    type="date"
+  />
+  <Input
+    full={true}
+    name="email"
+    title="Email Address"
+    type="email"
+  />
+  <Input
+    full={true}
+    name="password"
+    title="Password"
+    type="password"
+  />
+</Fragment>
+`;
+
+exports[`FormFields should render login inputs 1`] = `
+<Fragment>
+  <Input
+    full={true}
+    name="email"
+    title="Email Address"
+    type="email"
+  />
+  <Input
+    full={true}
+    name="password"
+    title="Password"
+    type="password"
+  />
+</Fragment>
+`;

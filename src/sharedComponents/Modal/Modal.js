@@ -16,10 +16,7 @@ const Modal = ({
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
-  const isMobile = w <= 600 ? true : false;
-  console.log(isMobile);
-  console.log(window.innerWidth);
-
+  const isMobile = w <= 760 ? true : false;
   if (modalType) {
     return (
       <div onClick={handleClose} className={styles.modal_background}>

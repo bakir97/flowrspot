@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserModal should render Loading Component 1`] = `
+<Connect(Modal)
+  modalText="I don’t want to register"
+>
+  <Loader />
+</Connect(Modal)>
+`;
+
+exports[`UserModal should render Profile 1`] = `<Profile />`;
+
+exports[`UserModal should render SignInForm 1`] = `
+<SignInForm
+  modalType={true}
+/>
+`;
+
+exports[`UserModal should render Success Component  1`] = `
+<Connect(Modal)>
+  <div
+    className="success_container"
+  >
+    <p
+      className="success_text"
+    >
+      Congratulations! You have successfully signed up for FlowrSpot!
+    </p>
+    <SignInButton
+      buttonStyle={false}
+      onClickFunction={[Function]}
+      title="OK"
+      type="submit"
+    />
+  </div>
+</Connect(Modal)>
+`;
+
+exports[`UserModal should render correctly 1`] = `
+<SignInForm
+  modalType={true}
+/>
+`;

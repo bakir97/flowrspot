@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FLowersCard should render correctly 1`] = `
+<div
+  className="card"
+>
+  <Content />
+  <img
+    className="image"
+  />
+</div>
+`;
+
+exports[`FLowersCard should render star 1`] = `
+<div
+  className="card"
+>
+  <Star
+    user={true}
+  />
+  <Content />
+  <img
+    className="image"
+  />
+</div>
+`;

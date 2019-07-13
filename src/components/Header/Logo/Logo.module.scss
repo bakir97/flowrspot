@@ -1,5 +1,4 @@
+@import "../../../assets/global/styles/mixins.scss";
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex;
 }

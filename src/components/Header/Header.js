@@ -2,65 +2,31 @@ import React, { Component } from "react";
 //Components
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
-import LoginButton from "./LoginButton";
-import CreateAccountButton from "./CreateAccountButton";
-import LoggedIn from "./LoggedIn";
 import MobileNav from "./MobileNav";
 //
 import styles from "./Header.module.scss";
-
+import loggedUser from "./helperFunctions/loggedUser";
+import { clientWidth } from "./helperFunctions/utils";
 export default class Header extends Component {
-  state = { width: 0, showMenu: false };
-  loggedUser = () => {
-    const { user, openModal } = this.props;
-    const { showMenu } = this.state;
-    if (user) {
-      return (
-        <LoggedIn
-          user={user}
-          openModal={openModal}
-          toggleMenu={this.toggleMenu}
-          showMenu={showMenu}
-        />
-      );
-    }
-    return (
-      <>
-        <LoginButton
-          showMenu={showMenu}
-          openModal={openModal}
-          toggleMenu={showMenu && this.toggleMenu}
-        />
-        <CreateAccountButton
-          showMenu={showMenu}
-          openModal={openModal}
-          toggleMenu={showMenu && this.toggleMenu}
-        />
-      </>
-    );
+  state = {
+    width: clientWidth(),
+    showMenu: false
   };
+
   toggleMenu = () => {
     this.setState(prevState => ({ showMenu: !prevState.showMenu }));
   };
   componentWillMount() {
-    this.setState({
-      width:
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth
-    });
+    window.onresize = this.resizeFunction;
   }
   resizeFunction = () => {
     this.setState({
-      width:
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth
+      width: clientWidth()
     });
   };
   render() {
-    window.onresize = this.resizeFunction;
     const { width, showMenu } = this.state;
+    const { user, openModal } = this.props;
 
     const isMobile = width <= 900 ? true : false;
     return (
@@ -73,7 +39,7 @@ export default class Header extends Component {
           ) : (
             <>
               <NavLinks closeModal={this.props.closeModal} />
-              {this.loggedUser()}
+              {loggedUser(user, openModal, showMenu, this.toggleMenu)}
             </>
           )}
         </div>
@@ -84,7 +50,7 @@ export default class Header extends Component {
               closeModal={this.props.closeModal}
               toggleMenu={this.toggleMenu}
             />
-            {this.loggedUser()}
+            {loggedUser(user, openModal, showMenu, this.toggleMenu)}
           </div>
         )}
       </>

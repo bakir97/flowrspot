@@ -1,9 +1,9 @@
 import React from "react";
-import Modal from "../Modal";
-import profileHolder from "../../assets/images/profile-holder.png";
-import profileHolder2x from "../../assets/images/profile-holder@2x.png";
-import profileHolder3x from "../../assets/images/profile-holder@3x.png";
-import SignInButton from "../SignInButton";
+import Modal from "../../Modal";
+import profileHolder from "../../../assets/images/profile-holder.png";
+import profileHolder2x from "../../../assets/images/profile-holder@2x.png";
+import profileHolder3x from "../../../assets/images/profile-holder@3x.png";
+import SignInButton from "../../SignInButton";
 import styles from "./Profile.module.scss";
 const Profile = ({
   user: { first_name, last_name, email },

@@ -37,27 +37,16 @@ export const login = user => async dispatch => {
     const userCreds = await axios.get(`${devKeys.api}/users/me`, {
       headers: { Authorization: user.auth_token }
     });
-    console.log(user, "user");
-
     dispatch(setUser({ ...userCreds.data.user, email: user.email }));
   } catch (error) {
-    console.log(error);
-
-    // dispatch(loadingUser(false));
-    // dispatch(errorUser([error.response.data.error]));
+    dispatch(loadingUser(false));
+    dispatch(errorUser([error.response.data.error]));
   }
 };
-export const logout = user => async dispatch => {
-  try {
-    localStorage.removeItem("user");
-    dispatch(getFlowers());
-    dispatch(setUser(null));
-  } catch (error) {
-    console.log(error);
-
-    // dispatch(loadingUser(false));
-    // dispatch(errorUser([error.response.data.error]));
-  }
+export const logout = () => dispatch => {
+  localStorage.removeItem("user");
+  dispatch(getFlowers());
+  dispatch(setUser(null));
 };
 export const successUser = payload => ({
   type: SUCCESS_USER,

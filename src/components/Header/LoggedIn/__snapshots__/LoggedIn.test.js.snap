@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoggedIn should render correctly 1`] = `
+<div
+  className="container"
+  onClick={[Function]}
+>
+  <p
+    className="text"
+  >
+     
+    undefined undefined
+  </p>
+  <img
+    alt="profile"
+    src="menu-profile-holder.png"
+    srcSet="menu-profile-holder@2x.png 2x,menu-profile-holder@3x.png 3x"
+  />
+</div>
+`;

@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "../Input";
-import styles from "./SignIn.module.scss";
+import Input from "../../Input";
+import styles from "./SignInForm.module.scss";
 const FormFields = ({
   first_name,
   last_name,

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should render correctly 1`] = `
+<div
+  className="modal_background"
+  onClick={[Function]}
+>
+  <div
+    className="modal"
+    onClick={[Function]}
+  />
+  <p
+    className="modal_text"
+    onClick={[Function]}
+  />
+</div>
+`;

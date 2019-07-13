@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action creators flowers should set addNewFavFlower action with payload flower id 1`] = `
+Array [
+  Object {
+    "payload": 5,
+    "type": "ADD_FAV",
+  },
+]
+`;
+
+exports[`action creators flowers should set loading action with payload true 1`] = `
+Array [
+  Object {
+    "payload": true,
+    "type": "LOADING_FLOWERS",
+  },
+]
+`;
+
+exports[`action creators flowers should set sucess action with payload true 1`] = `
+Array [
+  Object {
+    "payload": Array [
+      Object {
+        "id": 1,
+      },
+      Object {
+        "id": 1,
+      },
+      Object {
+        "id": 1,
+      },
+    ],
+    "type": "SUCCESS_FLOWERS",
+  },
+]
+`;

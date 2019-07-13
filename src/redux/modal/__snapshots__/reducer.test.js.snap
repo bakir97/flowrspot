@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`modal reducer should handle CLOSE_MODAL 1`] = `
+Object {
+  "modal": null,
+}
+`;
+
+exports[`modal reducer should handle OPEN_MODAL 1`] = `
+Object {
+  "modal": "login",
+}
+`;
+
+exports[`modal reducer should return the initial state 1`] = `
+Object {
+  "modal": null,
+}
+`;

@@ -2,13 +2,13 @@ import React from "react";
 //Components
 import Home from "../components/Home";
 import Header from "../components/Header";
-import SignIn from "../sharedComponents/SignIn";
+import UserModal from "../sharedComponents/UserModal";
 //
 import { Route, Switch } from "react-router-dom";
 const routes = () => {
   return (
     <>
-      <SignIn />
+      <UserModal />
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />

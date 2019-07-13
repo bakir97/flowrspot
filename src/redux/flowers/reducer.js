@@ -1,5 +1,5 @@
 import { LOADING_FLOWERS, SUCCESS_FLOWERS, ADD_FAV } from "../constants";
-const initialState = {
+export const initialState = {
   flowers: [],
   loading: false
 };

@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render MobileNav 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <Logo />
+    <MobileNav
+      toggleMenu={[Function]}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Header should render correctly 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <Logo />
+    <NavLinks />
+    <LoginButton
+      showMenu={false}
+      toggleMenu={false}
+    />
+    <CreateAccountButton
+      showMenu={false}
+      toggleMenu={false}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Header should show mobile menu 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <Logo />
+    <MobileNav
+      toggleMenu={[Function]}
+    />
+  </div>
+  <div
+    className="mobile_container"
+  >
+    <NavLinks
+      showMenu={true}
+      toggleMenu={[Function]}
+    />
+    <LoginButton
+      showMenu={true}
+      toggleMenu={[Function]}
+    />
+    <CreateAccountButton
+      showMenu={true}
+      toggleMenu={[Function]}
+    />
+  </div>
+</Fragment>
+`;

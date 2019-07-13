@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flowers should render FlowersList 1`] = `<FlowersList />`;
+
+exports[`Flowers should render Loader 1`] = `<Loader />`;
+
+exports[`Flowers should render correctly 1`] = `<FlowersList />`;

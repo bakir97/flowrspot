@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should render correctly 1`] = `
+<form
+  className="container"
+  onSubmit={[Function]}
+>
+  <input
+    className="input"
+    onChange={[Function]}
+    placeholder="Looking for something specific?"
+  />
+  <div
+    className="image_container"
+  >
+    <img
+      alt="search"
+      className="image"
+      onClick={[Function]}
+      src="pl-icon-search.svg"
+    />
+  </div>
+</form>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action creators modal should set close modal with payload null 1`] = `
+Array [
+  Object {
+    "payload": null,
+    "type": "CLOSE_MODAL",
+  },
+]
+`;
+
+exports[`action creators modal should set open modal action with payload modal type 1`] = `
+Array [
+  Object {
+    "payload": "login",
+    "type": "OPEN_MODAL",
+  },
+]
+`;

@@ -1,6 +1,6 @@
-import SignIn from "./SignIn";
+import UserModal from "./UserModal";
 import { connect } from "react-redux";
-import { registerUser, loginUser, logout } from "../../redux/user/action";
+import { registerUser, loginUser, logout } from "../../redux/user/actions";
 import {
   isUserLoading,
   isUserSuccess,
@@ -9,7 +9,7 @@ import {
 } from "../../redux/user/selectors";
 import { getModalType } from "../../redux/modal/selectors";
 import { openModal, closeModal } from "../../redux/modal/actions";
-import { errorUser } from "../../redux/user/action";
+import { errorUser } from "../../redux/user/actions";
 const mapStateToProps = state => ({
   loading: isUserLoading(state),
   isUserSuccess: isUserSuccess(state),
@@ -30,4 +30,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SignIn);
+)(UserModal);

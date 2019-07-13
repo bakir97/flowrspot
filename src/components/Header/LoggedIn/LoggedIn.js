@@ -12,7 +12,6 @@ const LoggedIn = ({
   const handleOpenModal = () => {
     window.document.body.style.overflow = "hidden";
     showMenu && toggleMenu();
-
     openModal("profile");
   };
   return (

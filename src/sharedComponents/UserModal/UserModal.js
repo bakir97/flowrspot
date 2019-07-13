@@ -1,48 +1,11 @@
 import React, { Component } from "react";
 import Modal from "../Modal";
-import styles from "./SignIn.module.scss";
+import styles from "./UserModal.module.scss";
 import SignInButton from "../SignInButton";
-import FormFields from "./FormFields";
 import Loader from "../Loader";
 import Profile from "./Profile";
+import SignInForm from "./SignInForm";
 export default class CreateAccount extends Component {
-  state = {
-    first_name: "",
-    last_name: "",
-    date_of_birth: "",
-    email: "",
-    password: ""
-  };
-  onChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-  componentDidUpdate(prevProps) {
-    if (prevProps.modalType !== this.props.modalType) {
-      this.props.errorUser([]);
-      this.setState({
-        first_name: "",
-        last_name: "",
-        date_of_birth: "",
-        email: "",
-        password: ""
-      });
-    }
-  }
-
-  onSubmit = e => {
-    const { email, password } = this.state;
-    e.preventDefault();
-    if (this.props.modalType === "login") {
-      return this.props.loginUser({ email, password });
-    }
-    this.props.registerUser(this.state);
-  };
-  renderErrors = () =>
-    this.props.errors.map(errorMessage => (
-      <p className={styles.error_text} key={errorMessage}>
-        {errorMessage}
-      </p>
-    ));
   handleOkButton = () => {
     const { openModal, closeModal, modalType } = this.props;
     if (modalType === "login") {
@@ -60,7 +23,6 @@ export default class CreateAccount extends Component {
     const {
       loading,
       isUserSuccess,
-      errors,
       modalType,
       user,
       logout,
@@ -105,29 +67,6 @@ export default class CreateAccount extends Component {
         </Modal>
       );
     }
-    return (
-      <Modal
-        modalText={
-          isLogin ? "I don’t want to Login" : "I don’t want to register"
-        }
-      >
-        <form className={styles.form} onSubmit={this.onSubmit}>
-          <p className={styles.title}>
-            {isLogin ? "Welcome Back" : "Create an Account"}
-          </p>
-          <FormFields
-            {...this.state}
-            onChange={this.onChange}
-            modalType={modalType}
-          />
-
-          {errors.length > 0 && this.renderErrors()}
-          <SignInButton
-            title={isLogin ? "Login to your Account" : "Create Account"}
-            type="submit"
-          />
-        </form>
-      </Modal>
-    );
+    return <SignInForm {...this.props} />;
   }
 }

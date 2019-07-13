@@ -1,9 +1,10 @@
 @import "../../../assets/global/styles/colors.scss";
 @import "../../../assets/global/styles/font.scss";
 @import "../../../assets/global/styles/mixins.scss";
+@import "../../../assets/global/styles/variables.scss";
 .links {
   margin-left: auto;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin-left: 0;
@@ -13,7 +14,7 @@
     text-decoration: none;
     display: inline-block;
     margin-right: 61px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet-width) {
       margin-right: 0;
       margin-bottom: 15px;
     }

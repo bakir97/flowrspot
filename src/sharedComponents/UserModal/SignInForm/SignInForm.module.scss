@@ -1,4 +1,4 @@
-@import "../../assets/global/styles/font.scss";
+@import "../../../assets/global/styles/font.scss";
 .form {
   height: 100%;
   width: 100%;
@@ -15,22 +15,13 @@
     margin-bottom: 30px;
   }
   .row_inputs_container {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .error_text {
     color: red;
     margin: 5px 0;
-  }
-}
-.success_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  .success_text {
-    color: black;
-    text-align: center;
   }
 }

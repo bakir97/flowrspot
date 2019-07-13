@@ -3,9 +3,8 @@ import styles from "./CreateAccountButton.module.scss";
 
 const CreateAccountButton = ({ openModal, showMenu, toggleMenu }) => {
   const triggerOpenModal = () => {
-    showMenu && toggleMenu();
-
     window.document.body.style.overflow = "hidden";
+    showMenu && toggleMenu();
     openModal("createAccount");
   };
   return (

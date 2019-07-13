@@ -64,8 +64,6 @@ export const searchFlowers = (search, auth) => async dispatch => {
     dispatch(successFlowers(updateflowers));
     dispatch(loadingFlowers(false));
   } catch (error) {
-    console.log(error);
-
     dispatch(loadingFlowers(false));
   }
 };

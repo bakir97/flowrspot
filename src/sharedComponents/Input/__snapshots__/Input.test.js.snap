@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render correctly 1`] = `
+<div
+  className="container"
+>
+  <label
+    className="label"
+  />
+  <input
+    className="input"
+  />
+</div>
+`;

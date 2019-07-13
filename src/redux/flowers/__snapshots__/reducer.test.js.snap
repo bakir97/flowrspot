@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flowers reducer should handle ADD_FAV 1`] = `
+Object {
+  "flowers": Array [],
+  "loading": false,
+}
+`;
+
+exports[`flowers reducer should handle LOADING_FLOWERS 1`] = `
+Object {
+  "flowers": Array [],
+  "loading": true,
+}
+`;
+
+exports[`flowers reducer should handle SUCCESS_FLOWERS 1`] = `
+Object {
+  "flowers": Array [
+    Object {
+      "id": 1,
+    },
+  ],
+  "loading": false,
+}
+`;
+
+exports[`flowers reducer should return the initial state 1`] = `
+Object {
+  "flowers": Array [],
+  "loading": false,
+}
+`;

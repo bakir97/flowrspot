@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlowersList should render correctly 1`] = `
+<div
+  className="container"
+/>
+`;
+
+exports[`FlowersList should render items 1`] = `
+<div
+  className="container"
+>
+  <FlowersCard
+    flower={
+      Object {
+        "id": "1",
+      }
+    }
+    key="1"
+  />
+  <FlowersCard
+    flower={
+      Object {
+        "id": "2",
+      }
+    }
+    key="2"
+  />
+  <FlowersCard
+    flower={
+      Object {
+        "id": "3",
+      }
+    }
+    key="3"
+  />
+</div>
+`;

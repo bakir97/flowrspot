@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInForm should render correctly 1`] = `
+<Connect(Modal)
+  modalText="I don’t want to register"
+>
+  <form
+    className="form"
+    onSubmit={[Function]}
+  >
+    <p
+      className="title"
+    >
+      Create an Account
+    </p>
+    <FormFields
+      date_of_birth=""
+      email=""
+      first_name=""
+      last_name=""
+      onChange={[Function]}
+      password=""
+    />
+    <SignInButton
+      title="Create Account"
+      type="submit"
+    />
+  </form>
+</Connect(Modal)>
+`;
