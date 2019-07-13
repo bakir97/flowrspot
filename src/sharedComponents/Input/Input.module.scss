@@ -1,3 +1,4 @@
+@import "../../assets/global/styles/variables.scss";
 @mixin container {
   display: flex;
   flex-direction: column;
@@ -26,6 +27,9 @@
   background-color: transparent;
   &:focus {
     outline: none;
+  }
+  @media screen and (max-width: $mobile-width) {
+    width: 90%;
   }
 }
 .label {

@@ -38,7 +38,9 @@ export default class CreateAccount extends Component {
         <Modal>
           <div className={styles.success_container}>
             <p className={styles.success_text}>
-              Congratulations! You have successfully signed up for FlowrSpot!
+              {isLogin
+                ? "Congratulations! You have successfully logged into FlowrSpot!"
+                : "Congratulations! You have successfully signed up for FlowrSpot!"}
             </p>
             <SignInButton
               title="OK"

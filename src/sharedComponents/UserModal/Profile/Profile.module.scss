@@ -2,7 +2,7 @@
   display: flex;
   padding-left: 111px;
   flex-direction: column;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 479px) {
     padding-left: 0;
   }
   .row {

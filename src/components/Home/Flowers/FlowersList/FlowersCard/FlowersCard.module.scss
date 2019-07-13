@@ -17,11 +17,11 @@
     margin-right: 0;
   }
   @media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
-    width: 232px;
+    width: 184px;
     margin-right: 0;
   }
   @media screen and (min-width: $tablet-width) and (max-width: $tablet-bigger-width) {
-    width: 232px;
+    width: 184px;
     margin-right: 20px;
   }
   .image {
@@ -35,8 +35,12 @@
     @media screen and (max-width: $mobile-width) {
       width: 184px;
     }
-    @media screen and (min-width: $mobile-width) and (max-width: $tablet-bigger-width) {
-      width: 232px;
+    @media screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
+      width: 184px;
+      margin-right: 0;
+    }
+    @media screen and (min-width: $tablet-width) and (max-width: $tablet-bigger-width) {
+      width: 184px;
     }
   }
   .content_container {
