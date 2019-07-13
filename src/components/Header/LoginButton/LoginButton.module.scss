@@ -13,4 +13,8 @@
   &:focus {
     outline: none;
   }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
 }

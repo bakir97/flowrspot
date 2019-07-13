@@ -3,11 +3,20 @@
 @import "../../../assets/global/styles/mixins.scss";
 .links {
   margin-left: auto;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
   .link {
     color: $light-gray;
     text-decoration: none;
     display: inline-block;
     margin-right: 61px;
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
     @include font-medium;
   }
 }

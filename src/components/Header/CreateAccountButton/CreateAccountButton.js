@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./CreateAccountButton.module.scss";
 
-const CreateAccountButton = ({ openModal }) => {
+const CreateAccountButton = ({ openModal, showMenu, toggleMenu }) => {
   const triggerOpenModal = () => {
+    showMenu && toggleMenu();
+
     window.document.body.style.overflow = "hidden";
     openModal("createAccount");
   };

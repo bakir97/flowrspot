@@ -3,6 +3,9 @@
 @import "../../../assets/global/styles/mixins.scss";
 .container {
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
   &:hover {
     cursor: pointer;
   }

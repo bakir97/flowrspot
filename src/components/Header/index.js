@@ -1,6 +1,6 @@
 import Header from "./Header";
 import { connect } from "react-redux";
-import { openModal } from "../../redux/modal/actions";
+import { openModal, closeModal } from "../../redux/modal/actions";
 import { getModalType } from "../../redux/modal/selectors";
 import { getUser } from "../../redux/user/selectors";
 const mapStateToProps = state => ({
@@ -9,7 +9,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {
-  openModal
+  openModal,
+  closeModal
 };
 
 export default connect(

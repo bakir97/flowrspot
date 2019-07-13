@@ -43,6 +43,10 @@
   font-size: 14px;
   color: inherit;
   border: none;
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    align-self: center;
+  }
   &:hover {
     cursor: pointer;
   }

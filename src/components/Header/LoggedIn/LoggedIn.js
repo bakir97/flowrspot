@@ -3,9 +3,15 @@ import profileHolder from "../../../assets/images/menu-profile-holder.png";
 import profileHolder2x from "../../../assets/images/menu-profile-holder@2x.png";
 import profileHolder3x from "../../../assets/images/menu-profile-holder@3x.png";
 import styles from "./LoggedIn.module.scss";
-const LoggedIn = ({ user: { first_name, last_name }, openModal }) => {
+const LoggedIn = ({
+  user: { first_name, last_name },
+  openModal,
+  toggleMenu,
+  showMenu
+}) => {
   const handleOpenModal = () => {
     window.document.body.style.overflow = "hidden";
+    showMenu && toggleMenu();
 
     openModal("profile");
   };

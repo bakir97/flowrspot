@@ -13,6 +13,19 @@
   position: relative;
   margin-bottom: 20px;
   margin-right: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 184px;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    width: 232px;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 920px) {
+    width: 232px;
+    margin-right: 20px;
+  }
   .image {
     position: absolute;
     top: 0;
@@ -21,6 +34,12 @@
     height: 350px;
     border-radius: 3px;
     z-index: -10;
+    @media screen and (max-width: 600px) {
+      width: 184px;
+    }
+    @media screen and (min-width: 600px) and (max-width: 920px) {
+      width: 232px;
+    }
   }
   .content_container {
     display: flex;
@@ -33,6 +52,9 @@
   margin: 0;
   margin-bottom: 7px;
   font-size: 20px;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 }
 .sub_text {
   margin: 0;
@@ -41,6 +63,9 @@
   opacity: 0.7;
   margin-bottom: 20px;
   font-style: italic;
+  @media screen and (max-width: 600px) {
+    font-size: 9.6px;
+  }
 }
 .button_sightings {
   width: 103px;
@@ -53,6 +78,12 @@
   margin-bottom: 20px;
   &:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    width: 68px;
+    height: 20px;
+    border-radius: 16px;
+    font-size: 9.6px;
   }
 }
 .button_sightings_fav {
@@ -67,6 +98,12 @@
   background-image: linear-gradient(to left, #ecbcb3, #eaa79e);
   &:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    width: 68px;
+    height: 20px;
+    border-radius: 16px;
+    font-size: 9.6px;
   }
 }
 .star_container {
@@ -100,9 +137,18 @@
   &:hover {
     cursor: pointer;
   }
+  @media screen and (max-width: 600px) {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+  }
 }
 .star {
   width: 13px;
   height: 12px;
   object-fit: contain;
+  @media screen and (max-width: 600px) {
+    width: 11px;
+    height: 10px;
+  }
 }

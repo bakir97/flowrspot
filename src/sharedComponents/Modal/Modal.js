@@ -12,6 +12,14 @@ const Modal = ({
     closeModal();
     window.document.body.style.overflow = "auto";
   };
+  const w =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  const isMobile = w <= 600 ? true : false;
+  console.log(isMobile);
+  console.log(window.innerWidth);
+
   if (modalType) {
     return (
       <div onClick={handleClose} className={styles.modal_background}>
@@ -21,10 +29,12 @@ const Modal = ({
           }}
           className={bigger ? styles.modal_profile : styles.modal}
         >
-          {close && (
-            <p onClick={handleClose} className={styles.close}>
-              &#10005;
-            </p>
+          {close && !isMobile && (
+            <div className={styles.close_container}>
+              <p onClick={handleClose} className={styles.close}>
+                &#10005;
+              </p>
+            </div>
           )}
           {children}
         </div>

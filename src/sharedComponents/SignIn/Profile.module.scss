@@ -2,10 +2,11 @@
   display: flex;
   padding-left: 111px;
   flex-direction: column;
-  // align-items: center;
+  @media screen and (max-width: 600px) {
+    padding-left: 0;
+  }
   .row {
     display: flex;
-
     align-items: center;
     margin-bottom: 41px;
   }
